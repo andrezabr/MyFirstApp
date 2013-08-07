@@ -25,6 +25,17 @@ strong { font-weight: bold; }
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'OpenSansLight';
+	src: url('fonts/opensans-light-webfont.eot');
+	src: url('fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/opensans-light-webfont.woff') format('woff'),
+			 url('fonts/opensans-light-webfont.ttf') format('truetype'),
+			 url('fonts/opensans-light-webfont.svg#OpenSansLight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 
 html {
 	background: url("../img/bg-980-left.gif") no-repeat left top, url("../img/bg-980-right.gif") no-repeat right 490px;
@@ -41,6 +52,12 @@ div#logo {
 	margin-top: 52px;
 }
 
+
+/*
+	
+	MENU
+	
+*/
 #menu {
 	width: 365px;
 	height: 940px;
@@ -60,8 +77,8 @@ div#logo {
 }
 
 #menu div {
-	font-family: "OpenSansRegular", Arial;
-	font-size: 3em;
+	font-family: "OpenSansLight", Arial;
+	font-size: 2em;
 	width: 365px;
 	height: 75px;
 	/*border: 1px solid red;*/
@@ -71,18 +88,71 @@ div#logo {
 	flex: 0 1 auto;
 }
 
+#menu div span {
+	color: #616161;
+	display: block;
+	float: left;
+	margin-left: 58px;
+	height: 100%;
+	line-height: 4em;
+}
+
+#menu div span.icon {
+	width: 61px;
+	height: 75px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
 #menu div a {
 	display: block;
 	text-decoration: none;
-	color: #000;
 	/*border: 1px solid red;*/
 
 	height: 100%;
+	width: 100%;
+	position: relative;
 	vertical-align: middle;
 }
-#menu div span {
-	width: 63px;
+
+#menu div.news .icon { 					background: url("../img/sprite-menu.png") no-repeat -1px center; }
+#menu div.library .icon { 			background: url("../img/sprite-menu.png") no-repeat -66px center; }
+#menu div.maps .icon { 					background: url("../img/sprite-menu.png") no-repeat -130px center; }
+#menu div.events .icon { 				background: url("../img/sprite-menu.png") no-repeat -189px center; }
+#menu div.radio .icon { 				background: url("../img/sprite-menu.png") no-repeat -252px center; }
+#menu div.transport .icon { 		background: url("../img/sprite-menu.png") no-repeat -315px center; }
+#menu div.directory .icon { 		background: url("../img/sprite-menu.png") no-repeat -377px center; }
+#menu div.video .icon { 				background: url("../img/sprite-menu.png") no-repeat -440px center; }
+#menu div.email .icon { 				background: url("../img/sprite-menu.png") no-repeat -503px center; }
+#menu div.emergency .icon { 		background: url("../img/sprite-menu.png") no-repeat -565px center; }
+#menu div.computerlabs .icon { 	background: url("../img/sprite-menu.png") no-repeat -631px center; }
+#menu div.courses .icon { 			background: url("../img/sprite-menu.png") no-repeat -694px center; }
+
+#footer {
+	height: 105px;
+	margin-top: 33px;
+	background: #666;
+
+	line-height: 8em;
+	padding-left: 58px;
+
+	font-family: Arial;
+	font-size: 1.35em;
+	color: #fbf9fd;
+}
+
+#footer .social {
+	float: right;
+	margin-right: 23px;
+	margin-top: 20px;
+	font-size: 1.35em;
 	height: 65px;
+}
+
+#footer .social a {
+	display: block;
+	float: left;
+	margin: 0 11px;
 }
 
 
