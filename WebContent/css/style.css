@@ -47,11 +47,20 @@ body {
 	font-size: 62.5%;
 }
 
+div {
+	display: block;
+}
+
 div#logo {
 	margin-left: 58px;
 	margin-top: 52px;
 }
 
+#content {
+	display: block;
+	padding-top: 17px;
+	min-height: 940px;
+}
 
 /*
 	
@@ -59,9 +68,10 @@ div#logo {
 	
 */
 #menu {
-	width: 365px;
+	/*width: 365px;*/
+	width: 30%;
 	height: 940px;
-	margin-top: 17px;
+	float: left;
 	/*border: 1px solid green;*/
 
 	display: -webkit-flex;
@@ -79,7 +89,7 @@ div#logo {
 #menu div {
 	font-family: "OpenSansLight", Arial;
 	font-size: 2em;
-	width: 365px;
+	width: 100%;
 	height: 75px;
 	/*border: 1px solid red;*/
 
@@ -128,6 +138,14 @@ div#logo {
 #menu div.computerlabs .icon { 	background: url("../img/sprite-menu.png") no-repeat -631px center; }
 #menu div.courses .icon { 			background: url("../img/sprite-menu.png") no-repeat -694px center; }
 
+
+/*
+	
+	FOOTER
+	
+*/
+
+
 #footer {
 	height: 105px;
 	margin-top: 33px;
@@ -139,6 +157,9 @@ div#logo {
 	font-family: Arial;
 	font-size: 1.35em;
 	color: #fbf9fd;
+
+	display: block;
+	clear: left;
 }
 
 #footer .social {
@@ -153,6 +174,23 @@ div#logo {
 	display: block;
 	float: left;
 	margin: 0 11px;
+}
+
+/*
+	
+	MAIN
+	
+*/
+
+#main {
+	float: left;
+	width: 70%;
+}
+
+.maincontent {
+	background: rgba(235, 235, 235, .69);
+	margin: 0 17px;
+	min-height: 940px;
 }
 
 
